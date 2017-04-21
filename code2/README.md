@@ -13,8 +13,8 @@ As of now for the prototype I am sending the 'trigger message' once
 as a POC. Later, we can add support for making these messages event-driven
 
 As soon as someone presses the 'Acknowledge' button on the trigger message,
-the original message is update as given in the specification and a new message
-is sent as well. 
+the original message is updated as given in the specification based on which
+user pressed the acknowledge button along with the timestamp and a new message is sent as well. 
 
 NOTES
 ======
