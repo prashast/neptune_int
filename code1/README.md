@@ -21,3 +21,14 @@ NOTES
 I've optimised the program for the worst case and I've voluntarily added
 a constant time factor for strings smaller than 100 characters for getting
 faster times for larger strings. 
+
+In order to keep track of elements seen while traversing a string I've 
+used a simple hash table that uses the ascii values of the elements 
+offset by a constant(33) as the hash key in order to store it into the
+hash table along with the index in the string at which it was found.
+If the element has been seen before, we invalidate that hash table
+entry. 
+
+Once we are done traversing the string we can run through the valid cells of the
+hash table and record the non-repeating character appearing the earliest(with
+the lowest index)
