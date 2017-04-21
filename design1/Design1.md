@@ -20,7 +20,7 @@ will have synchronized access to.
 As the two EC2 instances traverse through their half of the file, the index array
 will get updated and once they're done with that the two EC2 instances will then
 starting traversing through a separate half of the index array to figure out which non-
-repeating character appeared first by referencing the index value and if it exists.
+repeating character appeared first by referencing the index value. 
 
 
 Algorithm
@@ -50,8 +50,8 @@ For each visited and non-repeated cell in index/2:
 
 ```
 
-We will run this algorithm on both the instances and in the end the cell with the
-lower position value would be our first non-repeating character in the file
+We will run this algorithm on both the instances and in the end the index table cell with the
+lower position value would be our first non-repeating character in the file.
   
 
 
