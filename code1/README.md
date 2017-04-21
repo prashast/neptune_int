@@ -13,6 +13,7 @@ Instructions to compile
 ========================
 
 -> `make test` for the test cases 
+
 -> `make` for accepting input through stdin 
 
 NOTES
