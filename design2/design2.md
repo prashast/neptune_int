@@ -48,7 +48,8 @@ throughout it's uptime and that cache misses are handled in an effective
 and a scalable way that don't have too much of an overhead. We will need
 to have two API calls similar to what Memcached has:`get_value` and `update_value`.
 
--> `get_value` - getting values from the cache 
+-> `get_value` - getting values from the cache
+
 -> `update_value` - responsible for updating the database and invalidating the
 corresponding cache entry if present
 
