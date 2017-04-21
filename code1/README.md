@@ -32,3 +32,5 @@ entry.
 Once we are done traversing the string we can run through the valid cells of the
 hash table and record the non-repeating character appearing the earliest(with
 the lowest index)
+
+This algorithm will run in O(n) time. 
