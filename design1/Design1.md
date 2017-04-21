@@ -52,6 +52,4 @@ For each visited and non-repeated cell in index/2:
 
 We will run this algorithm on both the instances and in the end the index table cell with the
 lower position value would be our first non-repeating character in the file.
-  
-
 
