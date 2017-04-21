@@ -24,4 +24,7 @@ I've tried to keep the interactive message being displayed as close
 to the specifications as possible however there are some formatting discrepancies
 that I didn't take care of due to lack of time. 
 
+As of now the messages which are spit out by the server are hardcoded. We can 
+add support later for spitting out custom messages based on the real time event that
+occurs.
  
