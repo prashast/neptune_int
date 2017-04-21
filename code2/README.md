@@ -16,8 +16,12 @@ as a POC. Later, we can add support for making these messages event-driven
 NOTES
 ======
 
+There's a video attached of the interactive messaging in action because 
+in order to run it on your side, the slack channels would have to be reconfigured 
+to point to the correct URL's, clientSecret and clientID to be changed which might 
+be inconvenient
 I've tried to keep the interactive message being displayed as close
-to the specifications however there are some formatting discrepancies
+to the specifications as possible however there are some formatting discrepancies
 that I didn't take care of due to lack of time. 
 
  

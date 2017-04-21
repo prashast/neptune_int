@@ -6,6 +6,8 @@ var bodyParser = require('body-parser');
 var clientId = '172225713954.173044575415';
 var clientSecret = '4c1e4294c9d26ba918df998facc84b28';
 
+var d = new Date();
+
 var app = express();
 var urlencodedParser = bodyParser.urlencoded({extended:false});
 
@@ -68,6 +70,8 @@ app.post('/slack/actions',urlencodedParser,(req,res) =>{
   var actionJSONpayload = JSON.parse(req.body.payload);
   var result = actionJSONpayload.actions[0].name;
   var user = actionJSONpayload.user.name;
+  var hour = d.getHours();
+  var min = d.getMinutes();
 
  /*Check if the user pressed acknowledge*/
   if(result.toString().trim() === 'Acknowledge') {
@@ -83,7 +87,7 @@ app.post('/slack/actions',urlencodedParser,(req,res) =>{
         "attachment_type":"default",
         "fields" : [
         {
-          "title": "Acknowledged by @" +actionJSONpayload.user.name
+          "title": "Acknowledged by @" +actionJSONpayload.user.name+"| Today at "+hour+":"+min,
         }
         ],
         "actions": [
